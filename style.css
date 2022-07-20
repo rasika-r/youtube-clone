@@ -1,0 +1,309 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: auto !important;
+  scrollbar-color: red !important;
+  font-family:  sans-serif;
+}
+
+
+img{
+  user-select: none;
+}
+body {
+  background-color: #202020;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 65px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.header-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.col-2 {
+  display: block;
+  width: min(600px, 80%);
+  display: flex;
+  align-items: center;
+}
+.input-box {
+  flex: 1;
+}
+.input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #121212;
+  border: 1px solid #2c2c2c;
+  padding: 8px 10px;
+  color: white;
+}
+
+.input-box input::-webkit-input-placeholder {
+  /* Edge */
+  color: white;
+}
+
+.input-box input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.input-box input::placeholder {
+  color: white;
+}
+
+.header-child img {
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu img{
+  height: auto;
+  width: 25px;
+}
+
+.header-child .icon img {
+  height: 50px;
+}
+
+.col-3 img {
+  height: 30px;
+}
+
+.col-3 .create-icon:nth-child(2) img {
+  height: 24px;
+}
+
+
+.col-3 .search-icon  {
+  display: none;
+}
+
+.mic {
+  display: block;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  background-color: #181818;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.mic img {
+  height: auto;
+  width: 20px;
+}
+
+.col-1 {
+  margin-right: auto;
+  margin-left: 30px;
+}
+.col-2 {
+  margin: auto;
+}
+.col-3 {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.content {
+  display: flex;
+  height: 80vh;
+  flex: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.content .side {
+  width: 230px;
+  height: 100%;
+  overflow: auto;
+ }
+
+.content .side.hide {
+  display: none;
+}
+
+.content .main {
+  flex: 1;
+  overflow: auto;
+  background-color: #151515;
+}
+.content .side-row{
+  padding: 10px 0;
+  border-bottom: 1px solid #353535;
+}
+
+.sub-head{
+  margin: 5px 0 10px 0;
+}
+
+.sub-head h5{
+  color: white;
+  padding-left: 30px;
+}
+
+
+.content .side a{
+  width: 85%;
+  margin-left:auto ;
+  display: block;
+  padding: 13px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+display: flex;
+align-items: center;
+  font-size: 14px;
+  gap: 17px;
+}
+
+.content svg, .content span img{
+  fill: white;
+  width: 20px;
+  height: 20px;
+  
+  }
+
+
+
+
+  .content .side-row div:hover:not(.sub-head){
+    background-color: #383838;
+  }
+
+
+  .main .parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.main .child{
+    aspect-ratio: 3.8/3.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .child-img{
+  width: 100%;
+  aspect-ratio: 40.2/22.7;
+  background: black;
+}
+
+
+.main .child-content{
+display: flex;
+flex: 1;
+gap: 15px;
+
+}
+
+.main .child-content .profile{
+  width: 40px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-color: black;
+  margin: 10px 0 ;
+}
+
+
+.main .column-2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* .main .column-2 .line{
+  width: 90%;
+  height: 7px;
+  border-radius: 10px;
+  background-color: black;
+} */
+
+.main .column-2 .line{
+  color: white;
+  margin-top: 7px;
+}
+
+.main .column-2 .channel-link{
+  color: rgba(255, 255, 255, 0.548);
+  font-size: 12px;
+  margin-top: 3px;
+  cursor: pointer;
+  
+}
+
+.main .column-2 .channel-link.views{
+  margin: 0;
+}
+
+.main .column-2 .views span{
+  display: inline-block;
+width: 4px;
+border-radius: 50%;
+margin: 0 4px;
+background-color: rgba(255, 255, 255, 0.436);
+aspect-ratio: 1;
+}
+
+
+@media screen and ( max-width:550px) {
+
+  
+  .col-3 div:nth-child(2){
+    display: none;
+  }
+
+  .col-2{
+    display: none;
+  }
+
+  .col-3 .search-icon{
+    display: block;
+  }
+  .col-3 .search-icon img{
+    width: 20px;
+  }
+
+  .side{
+    display: none;
+    position: absolute;
+    background-color: #151515;
+  }
+
+
+  .side.hide{
+    display: block !important;
+  }
+  
+  .content .main{
+    height: fit-content;
+  }
+
+}
