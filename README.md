@@ -12,11 +12,11 @@
 </h3>
 
 
-## I had a great time designing this webpage using HTML, CSS and a bit of JS!.
+## I had a great time designing this webpage using HTML, CSS and a bit of JS! ✨.
 
 <br>
 
-## It was fun to clone a website.
+## It was fun to clone a website 🏆.
 
 <br>
 
