@@ -1,3 +1,7 @@
+## Link to <a target="_blank" href="https://rasika-r.github.io/youtube-clone/">Live Preview</a>
+
+<br>
+
 <h3 align="center">
     Hello!
     <img src="wave.gif" 
@@ -13,10 +17,6 @@
 <br>
 
 ## It was fun to clone a website.
-
-<br>
-
-## Link to <a target="_blank" href="https://rasika-r.github.io/youtube-clone/">Live Preview</a>
 
 <br>
 
