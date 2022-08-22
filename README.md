@@ -21,7 +21,7 @@
 
 <br>
 
-<h3 align="center">I am on my way to become a Developer</h3>
+<h3 align="center">On my way to become a Developer</h3>
 
 
 <p align="center"><img  src="https://github-readme-streak-stats.herokuapp.com/?user=rasika-r"  /></p>
